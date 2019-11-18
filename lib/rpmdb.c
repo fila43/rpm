@@ -1882,6 +1882,8 @@ rpmdbIndexIterator rpmdbIndexIteratorInit(rpmdb db, rpmDbiTag rpmtag)
     ii->ii_dbi = dbi;
     ii->ii_set = NULL;
 
+    ii->ii_dbc = NULL;
+
     return ii;
 }
 
